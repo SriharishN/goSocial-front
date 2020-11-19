@@ -25,7 +25,10 @@ const styles = (theme) =>({
     },
     closeButton:{
         position: 'absolute',
-        left:'90%'
+        left:'90%',
+        ['@media (max-width:640px)']: { // eslint-disable-line no-useless-computed-key
+            left: '83%'
+          }
     },
     profileImage:{
         maxWidth:200,

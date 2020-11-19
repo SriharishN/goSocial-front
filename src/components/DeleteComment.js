@@ -14,7 +14,10 @@ const styles = (theme) =>({
     ...theme.spreadThis,
     deleteButton:{
         position: 'absolute',
-        left: '90%'
+        left: '90%',
+        ['@media (max-width:640px)']: { // eslint-disable-line no-useless-computed-key
+            left: '83%'
+          }
     }
 })
 

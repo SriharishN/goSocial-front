@@ -16,14 +16,20 @@ const styles = (theme) =>({
     ...theme.spreadThis,
     submitButton:{
         position: 'relative',
-        left:'85%'
+        left:'85%',
+        ['@media (max-width:640px)']: { // eslint-disable-line no-useless-computed-key
+            left: '31%'
+          }
     },
     circularProgress:{
         position: 'absolute'
     },
     closeButton:{
         position: 'absolute',
-        left:'90%'
+        left:'90%',
+        ['@media (max-width:640px)']: { // eslint-disable-line no-useless-computed-key
+            left: '83%'
+          }
     }
 })
 
